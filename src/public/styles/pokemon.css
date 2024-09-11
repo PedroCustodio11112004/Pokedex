@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #990000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff3333;
+    margin-bottom: 10px;
+}
+
+h3 {
+    background-color: #666;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+div {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.types {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.types p {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #990000;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.type-bug {
+    background-color: #cc0000;
+    color: white;
+}
+
+.type-dark {
+    background-color: #333333;
+    color: white;
+}
+
+.type-dragon {
+    background-color: #6666cc;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    background-color: #333;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+li:nth-child(odd) {
+    background-color: #666;
+}
+
+.stats {
+    padding: 20px;
+}
+
+.stat-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.stat-name {
+    width: 120px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.bar-background {
+    flex: 1;
+    background-color: #666;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.bar-fill {
+    background-color: #990000;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stat-value {
+    width: 50px;
+    text-align: right;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    img {
+        max-width: 150px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .types p {
+        font-size: 1em;
+    }
+
+    .stat-name, .stat-value {
+        font-size: 1em;
+    }
+}

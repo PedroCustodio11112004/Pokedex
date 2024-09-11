@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/pokemon.css">
+    <title>PokeDex de Imersão</title>
+</head>
+<body>
+    <h1>PokeDex de Imersão</h1>
+    <% results.forEach(pokemon => { %>
+    <div>
+        <a href="/<%=pokemon.name%>">Nome: <%= pokemon.name %></a>
+        <p>URL: <%= pokemon.url %></p>
+    </div>
+
+    <% }) %>
+</body>
+</html>
